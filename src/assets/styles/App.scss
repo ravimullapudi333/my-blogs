@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .header {
+    font-weight: bold;
+    padding: 1%;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .create-blog {
+      background-color: #787a78;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  }
+  .content {
+    flex-grow: 1;
+    display: flex;
+    overflow-y: hidden;
+    height: 0px;
+
+    .side {
+      width: 30%;
+      border: 1px solid black;
+      overflow-y: auto;
+      padding: 10px;
+    }
+    .main-content {
+      width: 70%;
+      border: 1px solid black;
+      overflow-y: auto;
+    }
+  }
+}
